@@ -8,6 +8,7 @@ export interface Plugins {
 
 export const Plugins: Plugins = {
   isAvailable(name: string): boolean {
+    log(`Calling isAvailable on ${name}`);
     return false;
-  }
-}
+  },
+};
